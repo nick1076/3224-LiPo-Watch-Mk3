@@ -1,0 +1,88 @@
+Added Component: Designator=TP1(Testpoint Footprint)
+Added Component: Designator=TP2(Testpoint Footprint)
+Added Component: Designator=TP3(Testpoint Footprint)
+Added Component: Designator=TP4(Testpoint Footprint)
+Added Component: Designator=TP5(Testpoint Footprint)
+Added Component: Designator=TP6(Testpoint Footprint)
+Added Component: Designator=TP7(Testpoint Footprint)
+Added Component: Designator=TP8(Testpoint Footprint)
+Added Component: Designator=TP9(Testpoint Footprint)
+Added Component: Designator=TP10(Testpoint Footprint)
+Added Component: Designator=TP11(Testpoint Footprint)
+Added Component: Designator=TP12(Testpoint Footprint)
+Added Component: Designator=TP13(Testpoint Footprint)
+Added Component: Designator=TP14(Testpoint Footprint)
+Added Component: Designator=TP15(Testpoint Footprint)
+Added Component: Designator=TP16(Testpoint Footprint)
+Added Component: Designator=TP17(Testpoint Footprint)
+Added Component: Designator=TP18(Testpoint Footprint)
+Added Component: Designator=TP19(Testpoint Footprint)
+Added Component: Designator=TP20(Testpoint Footprint)
+Added Component: Designator=TP21(Testpoint Footprint)
+Added Pin To Net: NetName=PACK+ Pin=TP1-1
+Added Pin To Net: NetName=LDO_IN Pin=TP2-1
+Added Pin To Net: NetName=VSYS Pin=TP3-1
+Added Pin To Net: NetName=VSYS Pin=TP4-1
+Added Pin To Net: NetName=PACK+ Pin=TP5-1
+Added Pin To Net: NetName=BIN Pin=TP6-1
+Added Pin To Net: NetName=PB5//DIN Pin=TP7-1
+Added Pin To Net: NetName=PB6//CLK Pin=TP8-1
+Added Pin To Net: NetName=PB7//OE_CTRL Pin=TP9-1
+Added Pin To Net: NetName=OE Pin=TP10-1
+Added Pin To Net: NetName=GND Pin=TP11-1
+Added Pin To Net: NetName=GND Pin=TP12-1
+Added Pin To Net: NetName=GND Pin=TP13-1
+Added Pin To Net: NetName=USB_VCC Pin=TP14-1
+Added Pin To Net: NetName=PA10//SDA Pin=TP15-1
+Added Pin To Net: NetName=PA9//SCL Pin=TP16-1
+Added Pin To Net: NetName=3V3 Pin=TP17-1
+Added Pin To Net: NetName=NetR36_2 Pin=TP18-1
+Added Pin To Net: NetName=NetR37_2 Pin=TP19-1
+Added Pin To Net: NetName=NetR38_2 Pin=TP20-1
+Added Pin To Net: NetName=NetR32_1 Pin=TP21-1
+Added Member To Class: ClassName=Main Member=Component C8 100nF
+Added Member To Class: ClassName=Main Member=Component C10 0.1uF
+Added Member To Class: ClassName=Main Member=Component C11 4.7uF
+Added Member To Class: ClassName=Main Member=Component C12 0.1uF
+Added Member To Class: ClassName=Main Member=Component C13 1uF
+Added Member To Class: ClassName=Main Member=Component C16 0.1µF
+Added Member To Class: ClassName=Main Member=Component C19 1µF
+Added Member To Class: ClassName=Main Member=Component C21 0.1µF
+Added Member To Class: ClassName=Main Member=Component Q3 DMN2058U-13
+Added Member To Class: ClassName=Main Member=Component R14 10k
+Added Member To Class: ClassName=Main Member=Component R16 10kO
+Added Member To Class: ClassName=Main Member=Component R17 1k
+Added Member To Class: ClassName=Main Member=Component R19 10kO
+Added Member To Class: ClassName=Main Member=Component R20 10kO
+Added Member To Class: ClassName=Main Member=Component R23 4.7kO
+Added Member To Class: ClassName=Main Member=Component R25 2.2kO
+Added Member To Class: ClassName=Main Member=Component R28 1MO
+Added Member To Class: ClassName=Main Member=Component R30 1kO
+Added Member To Class: ClassName=Main Member=Component R32 NC
+Added Member To Class: ClassName=Main Member=Component R34 10kO
+Added Member To Class: ClassName=Main Member=Component SW4 450404015514
+Added Member To Class: ClassName=Main Member=Component SW5 RST
+Added Member To Class: ClassName=Main Member=Component TP1 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP2 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP3 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP4 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP5 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP6 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP7 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP8 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP9 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP10 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP11 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP12 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP13 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP14 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP15 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP16 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP17 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP18 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP19 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP20 Testpoint
+Added Member To Class: ClassName=Main Member=Component TP21 Testpoint
+Added Member To Class: ClassName=Main Member=Component U6 STM32L432KCU6
+Added Member To Class: ClassName=Main Member=Component U9 RV-3028-C7 32.768kHz 1ppm TA QC
+Added Member To Class: ClassName=Main Member=Component U10 24LC32AT-I/SN

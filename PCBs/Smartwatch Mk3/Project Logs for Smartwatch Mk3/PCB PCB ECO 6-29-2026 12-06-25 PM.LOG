@@ -1,0 +1,147 @@
+Change Component Comment : Designator=R18 Old Comment=10kO New Comment=4.7kO
+Change Component Comment : Designator=R19 Old Comment=10kO New Comment=4.7kO
+Change Component Designator: OldDesignator=C7 NewDesignator=C9
+Change Component Designator: OldDesignator=C8 NewDesignator=C10
+Change Component Designator: OldDesignator=C9 NewDesignator=C11
+Change Component Designator: OldDesignator=C10 NewDesignator=C12
+Change Component Designator: OldDesignator=C11 NewDesignator=C13
+Change Component Designator: OldDesignator=C12 NewDesignator=C7
+Change Component Designator: OldDesignator=C13 NewDesignator=C14
+Change Component Designator: OldDesignator=C14 NewDesignator=C8
+Change Component Designator: OldDesignator=C15 NewDesignator=C21
+Change Component Designator: OldDesignator=C16 NewDesignator=C15
+Change Component Designator: OldDesignator=C17 NewDesignator=C16
+Change Component Designator: OldDesignator=C18 NewDesignator=C17
+Change Component Designator: OldDesignator=C19 NewDesignator=C18
+Change Component Designator: OldDesignator=C20 NewDesignator=C19
+Change Component Designator: OldDesignator=C21 NewDesignator=C20
+Change Component Designator: OldDesignator=Q2 NewDesignator=Q3
+Change Component Designator: OldDesignator=Q3 NewDesignator=Q4
+Change Component Designator: OldDesignator=Q4 NewDesignator=Q2
+Change Component Designator: OldDesignator=R13 NewDesignator=R16
+Change Component Designator: OldDesignator=R14 NewDesignator=R18
+Change Component Designator: OldDesignator=R15 NewDesignator=R19
+Change Component Designator: OldDesignator=R16 NewDesignator=R20
+Change Component Designator: OldDesignator=R17 NewDesignator=R21
+Change Component Designator: OldDesignator=R18 NewDesignator=R22
+Change Component Designator: OldDesignator=R19 NewDesignator=R23
+Change Component Designator: OldDesignator=R20 NewDesignator=R24
+Change Component Designator: OldDesignator=R21 NewDesignator=R13
+Change Component Designator: OldDesignator=R22 NewDesignator=R14
+Change Component Designator: OldDesignator=R23 NewDesignator=R15
+Change Component Designator: OldDesignator=R24 NewDesignator=R28
+Change Component Designator: OldDesignator=R25 NewDesignator=R29
+Change Component Designator: OldDesignator=R26 NewDesignator=R17
+Change Component Designator: OldDesignator=R27 NewDesignator=R25
+Change Component Designator: OldDesignator=R28 NewDesignator=R26
+Change Component Designator: OldDesignator=R29 NewDesignator=R30
+Change Component Designator: OldDesignator=R30 NewDesignator=R31
+Change Component Designator: OldDesignator=R31 NewDesignator=R27
+Change Component Designator: OldDesignator=R32 NewDesignator=R33
+Change Component Designator: OldDesignator=R33 NewDesignator=R34
+Change Component Designator: OldDesignator=R34 NewDesignator=R39
+Change Component Designator: OldDesignator=SW2 NewDesignator=SW4
+Change Component Designator: OldDesignator=SW3 NewDesignator=SW5
+Change Component Designator: OldDesignator=SW4 NewDesignator=SW2
+Change Component Designator: OldDesignator=SW5 NewDesignator=SW3
+Change Component Designator: OldDesignator=U5 NewDesignator=U6
+Change Component Designator: OldDesignator=U6 NewDesignator=U5
+Change Component Designator: OldDesignator=U7 NewDesignator=U9
+Change Component Designator: OldDesignator=U8 NewDesignator=U7
+Change Component Designator: OldDesignator=U9 NewDesignator=U8
+Change Component Designator: OldDesignator=U10 NewDesignator=U11
+Change Component Designator: OldDesignator=U11 NewDesignator=U12
+Added Component: Designator=R32(RESC1608X55X25NL10T15)
+Added Component: Designator=R35(RESC1608X55X25NL10T15)
+Added Component: Designator=R36(RESC1608X55X25NL10T15)
+Added Component: Designator=R37(RESC1608X55X25NL10T15)
+Added Component: Designator=R38(RESC1608X55X25NL10T15)
+Added Component: Designator=U10(SOIC-SN8_M)
+Add component (AddParameter): Name = "Code_IPC"; Value = "SOIC127P600-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MS-012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "revJ, Feb-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "8-Lead Plastic Small Outline (SN) - Narrow, 3.90mm Body [SOIC]"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOIC-SN8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "revBB, Aug-2009"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3 Pin=R32-2
+Added Pin To Net: NetName=GND Pin=R35-1
+Added Pin To Net: NetName=GND Pin=R36-1
+Added Pin To Net: NetName=GND Pin=R37-1
+Added Pin To Net: NetName=GND Pin=R38-1
+Add Pin To Net: Unknown Pin: Pin TP1-1
+Add Pin To Net: Unknown Pin: Pin TP2-1
+Add Pin To Net: Unknown Pin: Pin TP3-1
+Add Pin To Net: Unknown Pin: Pin TP4-1
+Add Pin To Net: Unknown Pin: Pin TP5-1
+Add Pin To Net: Unknown Pin: Pin TP6-1
+Add Pin To Net: Unknown Pin: Pin TP7-1
+Add Pin To Net: Unknown Pin: Pin TP8-1
+Add Pin To Net: Unknown Pin: Pin TP9-1
+Add Pin To Net: Unknown Pin: Pin TP10-1
+Add Pin To Net: Unknown Pin: Pin TP11-1
+Add Pin To Net: Unknown Pin: Pin TP12-1
+Add Pin To Net: Unknown Pin: Pin TP13-1
+Add Pin To Net: Unknown Pin: Pin TP14-1
+Add Pin To Net: Unknown Pin: Pin TP15-1
+Add Pin To Net: Unknown Pin: Pin TP16-1
+Add Pin To Net: Unknown Pin: Pin TP17-1
+Added Pin To Net: NetName=GND Pin=U10-4
+Added Pin To Net: NetName=PA10//SDA Pin=U10-5
+Added Pin To Net: NetName=PA9//SCL Pin=U10-6
+Added Pin To Net: NetName=3V3 Pin=U10-8
+Change Net Name : Old Net Name=NetR31_1 New Net Name=NetR27_1
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(207, 201, 181)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(0, 51, 0)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(110, 255, 255)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(110, 255, 255)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Maroon
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(0, 51, 0)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(0, 51, 0)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(0, 51, 0)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(0, 51, 0)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(110, 255, 255)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(110, 255, 255)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(110, 255, 255)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(153, 51, 102)
+Added Pin To Net: NetName=NetR32_1 Pin=R32-1
+Added Pin To Net: NetName=NetR32_1 Pin=R35-2
+Added Pin To Net: NetName=NetR32_1 Pin=U10-7
+Added Net: Name=NetR32_1
+Added Pin To Net: NetName=NetR36_2 Pin=R36-2
+Added Pin To Net: NetName=NetR36_2 Pin=U10-3
+Added Net: Name=NetR36_2
+Added Pin To Net: NetName=NetR37_2 Pin=R37-2
+Added Pin To Net: NetName=NetR37_2 Pin=U10-2
+Added Net: Name=NetR37_2
+Added Pin To Net: NetName=NetR38_2 Pin=R38-2
+Added Pin To Net: NetName=NetR38_2 Pin=U10-1
+Added Net: Name=NetR38_2
+Added Member To Class: ClassName=Main Member=Component R35 10kO
+Added Member To Class: ClassName=Main Member=Component R36 10kO
+Added Member To Class: ClassName=Main Member=Component R37 10kO
+Added Member To Class: ClassName=Main Member=Component R38 10kO
+Added Member To Class: ClassName=Main Member=Component R39 1kO
+Added Member To Class: ClassName=Main Member=Component SW4 450404015514
+Added Member To Class: ClassName=Main Member=Component SW5 RST
+Add Class Member: Failed to add class member : Component TP1 Testpoint
+Add Class Member: Failed to add class member : Component TP2 Testpoint
+Add Class Member: Failed to add class member : Component TP3 Testpoint
+Add Class Member: Failed to add class member : Component TP4 Testpoint
+Add Class Member: Failed to add class member : Component TP5 Testpoint
+Add Class Member: Failed to add class member : Component TP6 Testpoint
+Add Class Member: Failed to add class member : Component TP7 Testpoint
+Add Class Member: Failed to add class member : Component TP8 Testpoint
+Add Class Member: Failed to add class member : Component TP9 Testpoint
+Add Class Member: Failed to add class member : Component TP10 Testpoint
+Add Class Member: Failed to add class member : Component TP11 Testpoint
+Add Class Member: Failed to add class member : Component TP12 Testpoint
+Add Class Member: Failed to add class member : Component TP13 Testpoint
+Add Class Member: Failed to add class member : Component TP14 Testpoint
+Add Class Member: Failed to add class member : Component TP15 Testpoint
+Add Class Member: Failed to add class member : Component TP16 Testpoint
+Add Class Member: Failed to add class member : Component TP17 Testpoint
+Add Class Member: Failed to add class member : Component TP18 Testpoint
+Add Class Member: Failed to add class member : Component TP19 Testpoint
+Add Class Member: Failed to add class member : Component TP20 Testpoint
+Add Class Member: Failed to add class member : Component TP21 Testpoint
+Added Member To Class: ClassName=Main Member=Component U12 MCP9808T-E/MC

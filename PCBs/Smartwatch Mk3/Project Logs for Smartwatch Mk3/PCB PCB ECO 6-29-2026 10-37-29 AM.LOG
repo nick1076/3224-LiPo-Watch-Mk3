@@ -1,0 +1,23 @@
+Change Footprint: Footprint Not Found PCBComponent_1
+Add Component: Footprint Not Found SW_SLW-913535-2A-SMT
+Add Pin To Net: Unknown Pin: Pin S2-2
+Add Pin To Net: Unknown Pin: Pin S2-3
+Add Pin To Net: Unknown Pin: Pin U6-6
+Add Pin To Net: Unknown Pin: Pin U6-7
+Add Pin To Net: Unknown Pin: Pin U6-8
+Add Pin To Net: Unknown Pin: Pin U6-10
+Add Pin To Net: Unknown Pin: Pin U6-11
+Add Pin To Net: Unknown Pin: Pin U6-12
+Add Pin To Net: Unknown Pin: Pin U6-13
+Added Pin To Net: NetName=PA9//SCL Pin=U10-1
+Added Pin To Net: NetName=3V3 Pin=U10-2
+Added Pin To Net: NetName=GND Pin=U10-3
+Added Pin To Net: NetName=PA10//SDA Pin=U10-4
+Added Pin To Net: NetName=GND Pin=U10-6
+Added Pin To Net: NetName=GND Pin=U10-7
+Added Pin To Net: NetName=GND Pin=U10-8
+Added Pin To Net: NetName=3V3 Pin=U10-9
+Added Pin To Net: NetName=3V3 Pin=U10-10
+Add Class Member: Failed to add class member : Component S2 SLW-913535-2A-SMT
+Added Member To Class: ClassName=Main Member=Component U6 0.96" TFT Display
+Added Member To Class: ClassName=Main Member=Component U10 LIS2DUXS12TR

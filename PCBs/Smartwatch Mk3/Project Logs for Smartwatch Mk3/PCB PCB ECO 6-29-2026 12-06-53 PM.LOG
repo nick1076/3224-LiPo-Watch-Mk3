@@ -1,0 +1,67 @@
+Add Pin To Net: Unknown Pin: Pin TP1-1
+Add Pin To Net: Unknown Pin: Pin TP2-1
+Add Pin To Net: Unknown Pin: Pin TP3-1
+Add Pin To Net: Unknown Pin: Pin TP4-1
+Add Pin To Net: Unknown Pin: Pin TP5-1
+Add Pin To Net: Unknown Pin: Pin TP6-1
+Add Pin To Net: Unknown Pin: Pin TP7-1
+Add Pin To Net: Unknown Pin: Pin TP8-1
+Add Pin To Net: Unknown Pin: Pin TP9-1
+Add Pin To Net: Unknown Pin: Pin TP10-1
+Add Pin To Net: Unknown Pin: Pin TP11-1
+Add Pin To Net: Unknown Pin: Pin TP12-1
+Add Pin To Net: Unknown Pin: Pin TP13-1
+Add Pin To Net: Unknown Pin: Pin TP14-1
+Add Pin To Net: Unknown Pin: Pin TP15-1
+Add Pin To Net: Unknown Pin: Pin TP16-1
+Add Pin To Net: Unknown Pin: Pin TP17-1
+Add Pin To Net: Unknown Pin: Pin TP18-1
+Add Pin To Net: Unknown Pin: Pin TP19-1
+Add Pin To Net: Unknown Pin: Pin TP20-1
+Add Pin To Net: Unknown Pin: Pin TP21-1
+Added Member To Class: ClassName=Main Member=Component C8 100nF
+Added Member To Class: ClassName=Main Member=Component C10 0.1uF
+Added Member To Class: ClassName=Main Member=Component C11 4.7uF
+Added Member To Class: ClassName=Main Member=Component C12 0.1uF
+Added Member To Class: ClassName=Main Member=Component C13 1uF
+Added Member To Class: ClassName=Main Member=Component C16 0.1µF
+Added Member To Class: ClassName=Main Member=Component C19 1µF
+Added Member To Class: ClassName=Main Member=Component C21 0.1µF
+Added Member To Class: ClassName=Main Member=Component Q3 DMN2058U-13
+Added Member To Class: ClassName=Main Member=Component R14 10k
+Added Member To Class: ClassName=Main Member=Component R16 10kO
+Added Member To Class: ClassName=Main Member=Component R17 1k
+Added Member To Class: ClassName=Main Member=Component R19 10kO
+Added Member To Class: ClassName=Main Member=Component R20 10kO
+Added Member To Class: ClassName=Main Member=Component R23 4.7kO
+Added Member To Class: ClassName=Main Member=Component R25 2.2kO
+Added Member To Class: ClassName=Main Member=Component R28 1MO
+Added Member To Class: ClassName=Main Member=Component R30 1kO
+Added Member To Class: ClassName=Main Member=Component R32 NC
+Added Member To Class: ClassName=Main Member=Component R34 10kO
+Added Member To Class: ClassName=Main Member=Component SW4 450404015514
+Added Member To Class: ClassName=Main Member=Component SW5 RST
+Add Class Member: Failed to add class member : Component TP1 Testpoint
+Add Class Member: Failed to add class member : Component TP2 Testpoint
+Add Class Member: Failed to add class member : Component TP3 Testpoint
+Add Class Member: Failed to add class member : Component TP4 Testpoint
+Add Class Member: Failed to add class member : Component TP5 Testpoint
+Add Class Member: Failed to add class member : Component TP6 Testpoint
+Add Class Member: Failed to add class member : Component TP7 Testpoint
+Add Class Member: Failed to add class member : Component TP8 Testpoint
+Add Class Member: Failed to add class member : Component TP9 Testpoint
+Add Class Member: Failed to add class member : Component TP10 Testpoint
+Add Class Member: Failed to add class member : Component TP11 Testpoint
+Add Class Member: Failed to add class member : Component TP12 Testpoint
+Add Class Member: Failed to add class member : Component TP13 Testpoint
+Add Class Member: Failed to add class member : Component TP14 Testpoint
+Add Class Member: Failed to add class member : Component TP15 Testpoint
+Add Class Member: Failed to add class member : Component TP16 Testpoint
+Add Class Member: Failed to add class member : Component TP17 Testpoint
+Add Class Member: Failed to add class member : Component TP18 Testpoint
+Add Class Member: Failed to add class member : Component TP19 Testpoint
+Add Class Member: Failed to add class member : Component TP20 Testpoint
+Add Class Member: Failed to add class member : Component TP21 Testpoint
+Added Member To Class: ClassName=Main Member=Component U6 STM32L432KCU6
+Added Member To Class: ClassName=Main Member=Component U9 RV-3028-C7 32.768kHz 1ppm TA QC
+Added Member To Class: ClassName=Main Member=Component U10 24LC32AT-I/SN
