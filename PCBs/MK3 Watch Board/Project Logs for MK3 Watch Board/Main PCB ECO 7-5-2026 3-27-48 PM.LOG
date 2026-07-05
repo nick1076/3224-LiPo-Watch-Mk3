@@ -1,0 +1,10 @@
+Added Pin To Net: NetName=PA8//SET Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S1-4
+Added Pin To Net: NetName=PA12//IND_ENA Pin=S2-1
+Added Pin To Net: NetName=GND Pin=S2-4
+Added Pin To Net: NetName=PA5//WAKE Pin=S3-1
+Added Pin To Net: NetName=GND Pin=S3-4
+Added Member To Class: ClassName=Main Member=Component S1 SWT0325-073016TSK_REVA
+Added Member To Class: ClassName=Main Member=Component S2 SWT0325-073016TSK_REVA
+Added Member To Class: ClassName=Main Member=Component S3 SWT0325-073016TSK_REVA
+Added Member To Class: ClassName=Main Member=Component SW1 450404015514

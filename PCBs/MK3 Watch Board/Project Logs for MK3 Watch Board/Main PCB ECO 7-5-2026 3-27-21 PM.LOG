@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=GND Pin=SW1-1
+Removed Pin From Net: NetName=PA8//SET Pin=SW1-2
+Removed Pin From Net: NetName=GND Pin=SW2-1
+Removed Pin From Net: NetName=PA11//DEBUG Pin=SW2-2
+Removed Pin From Net: NetName=PA12//IND_ENA Pin=SW3-COM
+Removed Pin From Net: NetName=GND Pin=SW3-L2
+Removed Pin From Net: NetName=GND Pin=SW4-1
+Removed Pin From Net: NetName=PA5//WAKE Pin=SW4-2
+Removed Member From Class: ClassName=Main Member=SW2
+Removed Member From Class: ClassName=Main Member=SW3
+Removed Member From Class: ClassName=Main Member=SW4
+Removed Member From Class: ClassName=Main Member=SW5
+Change Component Designator: OldDesignator=S1 NewDesignator=S4
+Change Component Designator: OldDesignator=SW5 NewDesignator=SW1
+Add Component: Footprint Not Found SW_SWT0325-073016TSK_REVA
+Add Component: Footprint Not Found SW_SWT0325-073016TSK_REVA
+Add Component: Footprint Not Found SW_SWT0325-073016TSK_REVA
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-4
+Add Pin To Net: Unknown Pin: Pin S2-1
+Add Pin To Net: Unknown Pin: Pin S2-4
+Add Pin To Net: Unknown Pin: Pin S3-1
+Add Pin To Net: Unknown Pin: Pin S3-4
+Add Class Member: Failed to add class member : Component S2 SWT0325-073016TSK_REVA
+Add Class Member: Failed to add class member : Component S3 SWT0325-073016TSK_REVA
+Added Member To Class: ClassName=Main Member=Component S4 TS09-63-25-WT-260-SMT-TR

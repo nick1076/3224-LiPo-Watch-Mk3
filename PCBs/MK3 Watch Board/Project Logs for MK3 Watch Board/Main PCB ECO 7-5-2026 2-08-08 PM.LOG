@@ -1,0 +1,47 @@
+Change Component Designator: OldDesignator=S2 NewDesignator=S1
+Added Component: Designator=SW5(450404015514)
+Add component (AddParameter): Name = "Contact Plating"; Value = "Silver"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "300mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "100MO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "99472344"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "5V"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Added Pin To Net: NetName=VSYS Pin=SW5-COM
+Added Pin To Net: NetName=NetQ1_3 Pin=SW5-L1
+Add Pin To Net: Unknown Pin: Pin TP2-1
+Add Pin To Net: Unknown Pin: Pin TP3-1
+Add Pin To Net: Unknown Pin: Pin TP4-1
+Add Pin To Net: Unknown Pin: Pin TP5-1
+Add Pin To Net: Unknown Pin: Pin TP6-1
+Add Pin To Net: Unknown Pin: Pin TP7-1
+Add Pin To Net: Unknown Pin: Pin TP8-1
+Add Pin To Net: Unknown Pin: Pin TP9-1
+Add Pin To Net: Unknown Pin: Pin TP10-1
+Add Pin To Net: Unknown Pin: Pin TP11-1
+Added Pin To Net: NetName=LDO_IN Pin=U3-1
+Added Pin To Net: NetName=GND Pin=U3-2
+Added Pin To Net: NetName=3V3 Pin=U3-5
+Added Member To Class: ClassName=Main Member=Component SW5 450404015514
+Add Class Member: Failed to add class member : Component TP2 Testpoint
+Add Class Member: Failed to add class member : Component TP3 Testpoint
+Add Class Member: Failed to add class member : Component TP4 Testpoint
+Add Class Member: Failed to add class member : Component TP5 Testpoint
+Add Class Member: Failed to add class member : Component TP6 Testpoint
+Add Class Member: Failed to add class member : Component TP7 Testpoint
+Add Class Member: Failed to add class member : Component TP8 Testpoint
+Add Class Member: Failed to add class member : Component TP9 Testpoint
+Add Class Member: Failed to add class member : Component TP10 Testpoint
+Add Class Member: Failed to add class member : Component TP11 Testpoint

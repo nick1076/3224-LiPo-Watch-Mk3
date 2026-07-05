@@ -1,0 +1,67 @@
+Add Component: Footprint Not Found SW_SLW-913535-2A-SMT
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found Testpoint Footprint
+Add Component: Footprint Not Found S-1317A33-M5T1U4
+Add Component: Footprint Not Found QFN_DUXS12_STM
+Add Component: Footprint Not Found PCBComponent_1
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin TP1-1
+Add Pin To Net: Unknown Pin: Pin TP2-1
+Add Pin To Net: Unknown Pin: Pin TP3-1
+Add Pin To Net: Unknown Pin: Pin TP4-1
+Add Pin To Net: Unknown Pin: Pin TP5-1
+Add Pin To Net: Unknown Pin: Pin TP6-1
+Add Pin To Net: Unknown Pin: Pin TP7-1
+Add Pin To Net: Unknown Pin: Pin TP8-1
+Add Pin To Net: Unknown Pin: Pin TP9-1
+Add Pin To Net: Unknown Pin: Pin TP10-1
+Add Pin To Net: Unknown Pin: Pin TP11-1
+Add Pin To Net: Unknown Pin: Pin U3-1
+Add Pin To Net: Unknown Pin: Pin U3-2
+Add Pin To Net: Unknown Pin: Pin U3-5
+Add Pin To Net: Unknown Pin: Pin U5-1
+Add Pin To Net: Unknown Pin: Pin U5-2
+Add Pin To Net: Unknown Pin: Pin U5-3
+Add Pin To Net: Unknown Pin: Pin U5-4
+Add Pin To Net: Unknown Pin: Pin U5-6
+Add Pin To Net: Unknown Pin: Pin U5-7
+Add Pin To Net: Unknown Pin: Pin U5-8
+Add Pin To Net: Unknown Pin: Pin U5-9
+Add Pin To Net: Unknown Pin: Pin U5-10
+Add Pin To Net: Unknown Pin: Pin U12-1
+Add Pin To Net: Unknown Pin: Pin U12-2
+Add Pin To Net: Unknown Pin: Pin U12-3
+Add Pin To Net: Unknown Pin: Pin U12-4
+Add Pin To Net: Unknown Pin: Pin U12-5
+Add Pin To Net: Unknown Pin: Pin U12-6
+Add Pin To Net: Unknown Pin: Pin U12-7
+Add Pin To Net: Unknown Pin: Pin U12-8
+Add Pin To Net: Unknown Pin: Pin U12-10
+Add Pin To Net: Unknown Pin: Pin U12-11
+Add Pin To Net: Unknown Pin: Pin U12-12
+Add Pin To Net: Unknown Pin: Pin U12-13
+Add Class Member: Failed to add class member : Component S1 SLW-913535-2A-SMT
+Add Class Member: Failed to add class member : Component TP1 Testpoint
+Add Class Member: Failed to add class member : Component TP2 Testpoint
+Add Class Member: Failed to add class member : Component TP3 Testpoint
+Add Class Member: Failed to add class member : Component TP4 Testpoint
+Add Class Member: Failed to add class member : Component TP5 Testpoint
+Add Class Member: Failed to add class member : Component TP6 Testpoint
+Add Class Member: Failed to add class member : Component TP7 Testpoint
+Add Class Member: Failed to add class member : Component TP8 Testpoint
+Add Class Member: Failed to add class member : Component TP9 Testpoint
+Add Class Member: Failed to add class member : Component TP10 Testpoint
+Add Class Member: Failed to add class member : Component TP11 Testpoint
+Add Class Member: Failed to add class member : Component U3 S-1317A33-M5T1U4
+Add Class Member: Failed to add class member : Component U5 LIS2DUXS12TR
+Add Class Member: Failed to add class member : Component U12 0.96" TFT Display

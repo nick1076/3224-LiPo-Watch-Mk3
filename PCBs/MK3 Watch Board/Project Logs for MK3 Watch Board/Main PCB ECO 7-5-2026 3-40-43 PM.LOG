@@ -1,0 +1,37 @@
+Removed Pin From Net: NetName=3V3 Pin=R20-2
+Removed Pin From Net: NetName=GND Pin=R23-1
+Removed Pin From Net: NetName=GND Pin=R24-1
+Removed Pin From Net: NetName=GND Pin=R25-1
+Removed Member From Class: ClassName=Main Member=R36
+Removed Member From Class: ClassName=Main Member=R37
+Removed Member From Class: ClassName=Main Member=R38
+Removed Member From Class: ClassName=Main Member=R39
+Change Component Designator: OldDesignator=R21 NewDesignator=R20
+Change Component Designator: OldDesignator=R22 NewDesignator=R21
+Change Component Designator: OldDesignator=R26 NewDesignator=R22
+Change Component Designator: OldDesignator=R27 NewDesignator=R23
+Change Component Designator: OldDesignator=R28 NewDesignator=R24
+Change Component Designator: OldDesignator=R29 NewDesignator=R25
+Change Component Designator: OldDesignator=R30 NewDesignator=R26
+Change Component Designator: OldDesignator=R31 NewDesignator=R27
+Change Component Designator: OldDesignator=R32 NewDesignator=R28
+Change Component Designator: OldDesignator=R33 NewDesignator=R29
+Change Component Designator: OldDesignator=R34 NewDesignator=R30
+Change Component Designator: OldDesignator=R35 NewDesignator=R31
+Change Component Designator: OldDesignator=R36 NewDesignator=R32
+Change Component Designator: OldDesignator=R37 NewDesignator=R33
+Change Component Designator: OldDesignator=R38 NewDesignator=R34
+Change Component Designator: OldDesignator=R39 NewDesignator=R35
+Added Pin To Net: NetName=GND Pin=U8-1
+Added Pin To Net: NetName=GND Pin=U8-2
+Added Pin To Net: NetName=GND Pin=U8-3
+Change Net Name : Old Net Name=NetR28_2 New Net Name=NetR24_2
+Change Net Name : Old Net Name=NetR29_2 New Net Name=NetR25_2
+Change Net Name : Old Net Name=NetR30_2 New Net Name=NetR26_2
+Change Net Name : Old Net Name=NetR31_2 New Net Name=NetR27_2
+Added Pin To Net: NetName=NetR21_2 Pin=R21-2
+Added Pin To Net: NetName=NetR21_2 Pin=U8-7
+Added Net: Name=NetR21_2
+Added Member To Class: ClassName=Main Member=Component S2 SWT0325-073016TSK_REVA
+Added Member To Class: ClassName=Main Member=Component S3 TS09-63-25-WT-260-SMT-TR
+Added Member To Class: ClassName=Main Member=Component SW1 RST
