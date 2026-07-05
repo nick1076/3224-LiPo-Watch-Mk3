@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=PB6//CLK Pin=TP8-1
+Removed Pin From Net: NetName=PB5//DIN Pin=TP9-1
+Removed Pin From Net: NetName=PB1//STOR_CLK Pin=TP10-1
+Removed Pin From Net: NetName=OE Pin=TP11-1
+Removed Member From Class: ClassName=Main Member=TP8
+Removed Member From Class: ClassName=Main Member=TP9
+Removed Member From Class: ClassName=Main Member=TP10
+Removed Member From Class: ClassName=Main Member=TP11
+Added Member To Class: ClassName=Main Member=Component R14 1kO
+Added Member To Class: ClassName=Main Member=Component R15 1kO
+Added Member To Class: ClassName=Main Member=Component R16 10kO
+Added Member To Class: ClassName=Main Member=Component R21 10kO
+Added Member To Class: ClassName=Main Member=Component R24 1kO
+Added Member To Class: ClassName=Main Member=Component R25 1kO
+Added Member To Class: ClassName=Main Member=Component R26 20
+Added Member To Class: ClassName=Main Member=Component R30 10kO
+Added Member To Class: ClassName=Main Member=Component R31 10kO
+Added Member To Class: ClassName=Main Member=Component R32 10kO
+Added Member To Class: ClassName=Main Member=Component R33 10kO

@@ -83,6 +83,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WBGRXXLH
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for MK3 Watch Board\Design Rule Check - Main.html
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0

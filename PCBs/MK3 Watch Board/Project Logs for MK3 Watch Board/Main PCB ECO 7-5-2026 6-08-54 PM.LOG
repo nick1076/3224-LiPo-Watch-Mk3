@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=3V3 Pin=C9-1
+Removed Pin From Net: NetName=GND Pin=C9-2
+Removed Pin From Net: NetName=LDO_IN Pin=C11-1
+Removed Pin From Net: NetName=GND Pin=C11-2
+Change Component Footprint: Designator=C11 Old Footprint=FP-CC0603-DA-MFG New Footprint=WCAP-CSGP_0603_L1.6W0.8H0.8_Reflow
+Change Component Comment : Designator=C11 Old Comment=4.7uF 16V New Comment=10uF
+Change Component Designator: OldDesignator=C10 NewDesignator=C9
+Change Managed Component Library Link : Designator=C11 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=27EDD705-A6C6-4958-B09B-23D54A1C3C4D New ItemGUID=15C13E94-D364-4E7D-B336-28C19B066C05 Old RevisionGUID=4A82E642-606B-4C18-A821-5C69BEDB5074 New RevisionGUID=8885A7E5-0489-4F8A-B2EA-6B84A3FAB31C
+Change component parameters: Designator = "C11" ("C11"); Footprint = "FP-CC0603-DA-MFG"; UniqueID = "\PCNQHPTZ" ("\PCNQHPTZ")
+Added Component: Designator=C10(WCAP-CSGP_0603_L1.6W0.8H0.8_Reflow)
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=LDO_IN Pin=C10-2
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=3V3 Pin=C11-2
+Added Member To Class: ClassName=Main Member=Component TP4 Testpoint
