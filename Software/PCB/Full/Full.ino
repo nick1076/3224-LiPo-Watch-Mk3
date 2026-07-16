@@ -1,19 +1,14 @@
 
+#include "battery.h"
+
+
+
 #define TFT_CS        PA4
 #define TFT_DC        PB4
 #define TFT_RST       PB3
 #define TFT_BLK       PA6
 #define WAKE_INPUT    PA0   //Wake Button Input
 #define SET_INPUT     PA8   //Set Button Input
-
-#define SR_DATA       PB5   // Data in
-#define SR_CLK        PB6   // Main register clock
-#define SR_LATCHCLK   PB1   // Storage clock
-#define SR_LEDENA     PB7   // Output enable
-
-const unsigned int BATTERY_CAPACITY = 150;
-
-#include <SparkFunBQ27441.h>
 
 int ticksAwakeAfterWoken = 20; //Number of ticks the watch stays on for after awoken by the user
 
@@ -364,70 +359,21 @@ void setup() {
 
 
 
-uint8_t who = 0xAA;
-LIS2DUXS12.Read_Reg(0x0F, &who);
-Serial.print("WHO_AM_I: 0x"); Serial.println(who, HEX);
-
-for (uint8_t a = 0x08; a < 0x78; a++) {   // quick bus scan
-  Wire.beginTransmission(a);
-  if (Wire.endTransmission() == 0) { Serial.print("ACK at 0x"); Serial.println(a, HEX); }
-}
-
-
-
-
-  
 
   //PEDOMETER
   LIS2DUXS12.begin();
   LIS2DUXS12StatusTypeDef stat1 = LIS2DUXS12.Enable_X();
-
   LIS2DUXS12StatusTypeDef stat = LIS2DUXS12.Enable_Pedometer(LIS2DUXS12_INT1_PIN);
-  
-Serial.print(" enable x result=    "); Serial.println(stat1);
-Serial.print(" enable pedometer =    "); Serial.println(stat);
-//delay(10);
-//LIS2DUXS12.Write_Reg(0x3F, 0x80);   // FUNC_CFG_ACCESS -> embedded bank
-//LIS2DUXS12.Write_Reg(0x2C, 0x08);   // EMB_FUNC_INIT_A: STEP_DET_INIT
-//LIS2DUXS12.Write_Reg(0x3F, 0x00);   // back to main bank
-//delay(100);                          // couple of 25 Hz ticks
-//
-//  //RST test code - trying to reset step count on init to 0!
-//LIS2DUXS12StatusTypeDef rst = LIS2DUXS12.Step_Counter_Reset();
-//delay(100);                          // then read -> expect 0
-//uint16_t steps = 12345;
-//LIS2DUXS12.Get_Step_Count(&steps);
-//Serial.print("rst="); Serial.print(rst);
-//Serial.print(" steps="); Serial.println(steps);
-
-
   Serial.print("LIS2DUXS12 Initialized!");
+
   tft.drawBitmap(148, 63, image_checkmark_backing, 8, 7, 0x4D6A);
   tft.drawBitmap(150, 65, image_checkmark, 4, 3, 0xFFFF);
 
   //FUEL GAUGE
-    if (!lipo.begin())
-    {
-        Serial.println("Error: Unable to communicate with BQ27441.");
-        Serial.println("  Check wiring and try again.");
-        Serial.println("  (Battery must be plugged into Battery Babysitter!)");
-        while (1) ;
-    }
-    Serial.println("Connected to BQ27441!");
-    lipo.setCapacity(BATTERY_CAPACITY);
-
+  batteryBegin(150); //Init for 150mAh cell
   
   //LIPO CHARGE LED INDICATOR SHIFT REGISTER
-  pinMode(SR_DATA,   OUTPUT);
-  pinMode(SR_CLK,  OUTPUT);
-  pinMode(SR_LATCHCLK,  OUTPUT);
-  pinMode(SR_LEDENA, OUTPUT);
-  digitalWrite(SR_CLK, LOW);
-  digitalWrite(SR_LATCHCLK, LOW);
-  sendByte(0x00);                   //All 0s
-  digitalWrite(SR_LEDENA, LOW);   //Disable output LEDs (Via GPIO, still forced on when charging)
-
-
+  batteryIndicatorMatrixBegin(PB5, PB6, PB1, PB7); //Init with correct IO pins
 
   Serial.println("Watch Ready!");
   delay(3000);
@@ -617,7 +563,7 @@ void loop() {
   delay(10); //10 ms delay per tick
   tick=tick+1;
   
-  ShowPercentage();
+  batteryIndicatorMatrixShowCharge();
 
   auto sample = sensor.readSample(1000);
   float current_value = sample.red;
@@ -850,31 +796,7 @@ void loop() {
   Serial.println(step_count);
   curSteps = step_count;
 
-//uint16_t lib_steps = 0;
-//LIS2DUXS12.Get_Step_Count(&lib_steps);
-//
-//uint8_t xl, xh, ctrl4, en_a = 0;
-//LIS2DUXS12.Read_Reg(0x28, &xl);          // main page, NO bank switch = OUT_X_L
-//LIS2DUXS12.Read_Reg(0x29, &xh);
-//int16_t out_x = (int16_t)((xh << 8) | xl);
-//LIS2DUXS12.Read_Reg(0x13, &ctrl4);       // CTRL4: bit4 = EMB_FUNC_EN
-//LIS2DUXS12.Write_Reg(0x3F, 0x80);
-//LIS2DUXS12.Read_Reg(0x04, &en_a);        // EMB_FUNC_EN_A: bit3 = PEDO_EN
-//LIS2DUXS12.Write_Reg(0x3F, 0x00);
-//uint8_t who = 0xAA, c4 = 0xAA;
-//int r1 = LIS2DUXS12.Read_Reg(0x0F, &who);   // WHO_AM_I: must be 0x47
-//int r2 = LIS2DUXS12.Read_Reg(0x13, &c4);    // CTRL4: should be ~0x30
-//Serial.print("r1="); Serial.print(r1);
-//Serial.print(" WHO=0x"); Serial.print(who, HEX);
-//Serial.print(" r2="); Serial.print(r2);
-//Serial.print(" CTRL4=0x"); Serial.println(c4, HEX);
-//
-//Serial.print("steps="); Serial.print(lib_steps);
-//Serial.print("  OUT_X="); Serial.print(out_x);
-//Serial.print("  CTRL4=0x"); Serial.print(ctrl4, HEX);
-//Serial.print("  EN_A=0x"); Serial.println(en_a, HEX);
-
-  curBat = int(lipo.soc());
+  curBat = batteryGetCharge();
   
   if (dispCounter % 2 == 0){
     DisplayTimeAndData(30, 20, 3, true, true, true);
@@ -900,56 +822,4 @@ void Clear(){
 //Set current clock hour and minute
 void SetClock(byte hour, byte minute){
   rtc.setTime(0, minute, hour, 0, 0, 0, 0);
-}
-
-
-
-//BQ FUEL GAUGE CODE BELOW
-
-
-
-
-void sendByte(uint8_t value) {
-  for (uint8_t i = 0; i < 8; i++) {
-    digitalWrite(SR_DATA, (value & 0x80) ? HIGH : LOW);  //Check MSB (if HIGH or LOW, then pick that for the pin state)
-    digitalWrite(SR_CLK, HIGH);
-    digitalWrite(SR_CLK, LOW);
-    value <<= 1; //Shift value left
-  }
-  digitalWrite(SR_LATCHCLK, HIGH);    //Pushes data into output register
-  digitalWrite(SR_LATCHCLK, LOW);
-}
-
-
-void ShowPercentage(){
-  int chrgPercentage = lipo.soc();
-
-  if (chrgPercentage > 87){
-    sendByte(0b11111111);
-  }
-  else if (chrgPercentage > 75){
-    sendByte(0b11111110);
-  }
-  else if (chrgPercentage > 62){
-    sendByte(0b11111100);
-  }
-  else if (chrgPercentage > 50){
-    sendByte(0b11111000);
-  }
-  else if (chrgPercentage > 37){
-    sendByte(0b11110000);
-  }
-  else if (chrgPercentage > 25){
-    sendByte(0b11100000);
-  }
-  else if (chrgPercentage > 12){
-    sendByte(0b11000000);
-  }
-  else if (chrgPercentage > 5){
-    sendByte(0b10000000);
-  }
-  else{
-    //Basically dead
-    sendByte(0b00000000);
-  }
 }
