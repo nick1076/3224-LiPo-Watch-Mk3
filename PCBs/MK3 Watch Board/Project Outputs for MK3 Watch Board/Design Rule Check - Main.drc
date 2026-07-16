@@ -1,0 +1,110 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Nick Niles\Desktop\Repos\3224-LiPo-Watch-Mk3\PCBs\MK3 Watch Board\Main.PcbDoc
+Date     : 7/15/2026
+Time     : 5:53:28 PM
+
+WARNING: Zero hole size multi-layer pad(s) detected
+   Pad U3-5(3697.402mil,2442.402mil) on Multi-Layer on Net 3V3
+   Pad U3-2(3604.882mil,2405mil) on Multi-Layer on Net GND
+   Pad U3-1(3604.882mil,2442.402mil) on Multi-Layer on Net LDO_IN
+   Pad U12-8(3913.622mil,2775.059mil) on Multi-Layer on Net GND
+   Pad U12-7(3913.622mil,2747.5mil) on Multi-Layer on Net PA4//NSS
+   Pad U12-10(3913.622mil,2830.177mil) on Multi-Layer on Net 3V3
+   Pad U12-11(3913.622mil,2857.736mil) on Multi-Layer on Net LEDK
+   Pad U12-12(3913.622mil,2885.295mil) on Multi-Layer on Net 3V3
+   Pad U12-13(3913.622mil,2912.854mil) on Multi-Layer on Net GND
+   Pad U12-6(3913.622mil,2719.941mil) on Multi-Layer on Net PB3//JTDO//RES
+   Pad U12-5(3913.622mil,2692.382mil) on Multi-Layer on Net PB4//NJTRST//DC
+   Pad U12-4(3913.622mil,2664.823mil) on Multi-Layer on Net PA1//SCK
+   Pad U12-3(3913.622mil,2637.264mil) on Multi-Layer on Net PA7//MOSI
+   Pad U12-2(3913.622mil,2609.705mil) on Multi-Layer on Net TP1
+   Pad U12-1(3912.929mil,2582.146mil) on Multi-Layer on Net TP0
+
+Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=12mil) (Max=1000mil) (Preferred=12mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=5mil) (Max=1000mil) (Preferred=5mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=20mil) (Max=1000mil) (Preferred=20mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=6mil) (Preferred=6mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=1000mil) (Preferred=6mil) (All)
+Rule Violations :0
+
+Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=11.811mil) (Conductor Width=5mil) (Air Gap=5mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (InPadClass('PowerPads'))
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=6mil) (All)
+   Violation between Minimum Annular Ring: (5.904mil < 6mil) Pad P1-1(4300mil,2345mil) on Multi-Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Pad P1-2(4250mil,2345mil) on Multi-Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Pad P1-3(4300mil,2395mil) on Multi-Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Pad P1-4(4250mil,2395mil) on Multi-Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.904mil < 6mil) Pad P2-1(4150mil,2045mil) on Multi-Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Pad P2-2(4200mil,2045mil) on Multi-Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Pad P2-3(4150mil,1995mil) on Multi-Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Pad P2-4(4200mil,1995mil) on Multi-Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (3219.567mil,2380.63mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (3219.567mil,2420mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (3255mil,2380.63mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (3255mil,2420mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (3290.433mil,2380.63mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (3290.433mil,2420mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (4381.315mil,3144mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (4420.685mil,3144mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+Rule Violations :16
+
+Processing Rule : Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (4381.315mil,3144mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 11.811mil) Via (4420.685mil,3144mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+Rule Violations :2
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=6mil) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (5.843mil < 6mil) Between Pad U7-1(3719.409mil,3264.646mil) on Top Layer And Pad U7-2(3745mil,3264.646mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.843mil < 6mil) Between Pad U7-2(3745mil,3264.646mil) on Top Layer And Pad U7-3(3770.59mil,3264.646mil) on Top Layer [Top Solder] Mask Sliver [5.843mil]
+Rule Violations :2
+
+Processing Rule : Silk To Solder Mask (Clearance=5mil) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (0.984mil < 5mil) Between Arc (4475.803mil,3104.63mil) on Top Overlay And Pad U10-1(4458.087mil,3114.472mil) on Top Layer [Top Overlay] to [Top Solder] clearance [0.984mil]
+Rule Violations :1
+
+Processing Rule : Silk to Silk (Clearance=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=71497.938mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 21
+Waived Violations : 0
+Time Elapsed        : 00:00:00
