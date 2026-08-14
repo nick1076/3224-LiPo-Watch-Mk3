@@ -1,6 +1,7 @@
 
 #include "battery.h"
 
+battery battery;
 
 
 #define TFT_CS        PA4
@@ -9,6 +10,10 @@
 #define TFT_BLK       PA6
 #define WAKE_INPUT    PA0   //Wake Button Input
 #define SET_INPUT     PA8   //Set Button Input
+
+#define DEBUG_INPUT   PA12 //Debug enter / exit input
+bool isInDebug = false;
+int debugIndex = 0;
 
 int ticksAwakeAfterWoken = 20; //Number of ticks the watch stays on for after awoken by the user
 
@@ -228,6 +233,7 @@ void setup() {
 
   pinMode(WAKE_INPUT, INPUT_PULLUP);
   pinMode(SET_INPUT, INPUT_PULLUP);
+  pinMode(DEBUG_INPUT, INPUT_PULLUP);
   
   tft.enableDisplay(true);
   
@@ -369,11 +375,15 @@ void setup() {
   tft.drawBitmap(148, 63, image_checkmark_backing, 8, 7, 0x4D6A);
   tft.drawBitmap(150, 65, image_checkmark, 4, 3, 0xFFFF);
 
-  //FUEL GAUGE
-  batteryBegin(150); //Init for 150mAh cell
+
+
+
+  //FUEL GAUGE & LED INDICATOR
+  battery.begin(150);
+  battery.initIndicator(PB5, PB6, PB1, PB7);
+
+
   
-  //LIPO CHARGE LED INDICATOR SHIFT REGISTER
-  batteryIndicatorMatrixBegin(PB5, PB6, PB1, PB7); //Init with correct IO pins
 
   Serial.println("Watch Ready!");
   delay(3000);
@@ -563,7 +573,6 @@ void loop() {
   delay(10); //10 ms delay per tick
   tick=tick+1;
   
-  batteryIndicatorMatrixShowCharge();
 
   auto sample = sensor.readSample(1000);
   float current_value = sample.red;
@@ -636,6 +645,61 @@ void loop() {
     }
 
     last_diff = current_diff;
+  }
+
+  if (!setMode && !awake && digitalRead(DEBUG_INPUT) == LOW){
+    if (isInDebug && parallelTick >= 5 && debugIndex > 2){
+      parallelTick = 0;
+      isInDebug = false; //Exit debug mode here
+      debugIndex = 0;
+      tft.enableDisplay(false);
+      digitalWrite(TFT_BLK, LOW);
+      tft.fillScreen(0x0);
+      delay(500);
+      return;
+    }
+    else if (!isInDebug) {
+      parallelTick = 0;
+      isInDebug = true; //Enter debug mode here
+      tft.enableDisplay(true);
+      digitalWrite(TFT_BLK, HIGH);
+    }
+    else if (isInDebug && parallelTick >= 5) {
+      parallelTick = 0;
+      debugIndex=debugIndex+1;
+    }
+
+    if (isInDebug){
+      if (debugIndex == 0){
+tft.fillScreen(0x0);
+tft.setTextColor(0xFFFF);
+tft.setTextWrap(false);
+tft.setCursor(69, 37);
+tft.print("index 1");
+      }
+      else if (debugIndex == 1){
+tft.fillScreen(0x0);
+tft.setTextColor(0xFFFF);
+tft.setTextWrap(false);
+tft.setCursor(69, 37);
+tft.print("index 2");
+      }
+      else if (debugIndex == 2){
+tft.fillScreen(0x0);
+tft.setTextColor(0xFFFF);
+tft.setTextWrap(false);
+tft.setCursor(69, 37);
+tft.print("index 3");
+      }
+    }
+
+    parallelTick=parallelTick+1;
+
+    return;
+  }
+
+  if (isInDebug){
+    return;
   }
 
   if (digitalRead(SET_INPUT) == LOW && !setMode){
@@ -744,9 +808,12 @@ void loop() {
   if (!awake && digitalRead(WAKE_INPUT) == LOW){
     dispCounter = 0;
     awake = true;
+    battery.indicator.ena(true);
+    curBat = battery.getCharge();
 
   }
   else if (!awake){
+    battery.indicator.ena(false);
     tft.enableDisplay(false);
     digitalWrite(TFT_BLK, LOW);
     lastDrawnData_heartRate = -1;
@@ -760,6 +827,9 @@ void loop() {
     return;
   }
   else if (awake){
+    battery.indicator.ena(true);
+    curBat = battery.getCharge();
+    battery.indicator.showCharge(battery.getCharge());
     tft.enableDisplay(true);
     digitalWrite(TFT_BLK, HIGH);
     if (dispCounter >= ticksAwakeAfterWoken){
@@ -796,7 +866,6 @@ void loop() {
   Serial.println(step_count);
   curSteps = step_count;
 
-  curBat = batteryGetCharge();
   
   if (dispCounter % 2 == 0){
     DisplayTimeAndData(30, 20, 3, true, true, true);
